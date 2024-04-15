@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next &&  NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3000",
+    "dev": "rm -rf .next &&  NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3002",
     "build": "next telemetry disable && NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,6 +13,8 @@
   "dependencies": {
     "@jest/types": "^29.6.3",
     "@module-federation/nextjs-mf": "^8.3.5",
+    "@types/lodash": "^4.17.0",
+    "axios": "^1.6.8",
     "lodash": "^4.17.21",
     "next": "13.5.6",
     "react": "^18",
