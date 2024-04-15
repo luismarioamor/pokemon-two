@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "rm -rf .next &&  NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3002",
+    "dev": "rm -rf .next &&  NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3000",
     "build": "next telemetry disable && NEXT_PRIVATE_LOCAL_WEBPACK=true next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
+    "@jest/types": "^29.6.3",
     "@module-federation/nextjs-mf": "^8.3.5",
-    "@types/lodash": "^4.17.0",
-    "axios": "^1.6.8",
     "lodash": "^4.17.21",
     "next": "13.5.6",
     "react": "^18",
@@ -20,11 +21,19 @@
     "zustand": "^4.5.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^15.0.2",
+    "@testing-library/user-event": "^14.5.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "13.5.6",
+    "eslint-plugin-jest-dom": "^5.2.0",
+    "eslint-plugin-testing-library": "^6.2.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.1.2",
     "typescript": "^5"
   },
   "engines": {

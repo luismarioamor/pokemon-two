@@ -7,6 +7,7 @@ declare module "hostShell/card" {
     bgColorCard: string;
     pokemon: IPokemon;
     pokemonSpecies: IPokemonSpecies;
+    dataTestId: string;
   }
 
   const CardPokemon: React.FC<IProps>;

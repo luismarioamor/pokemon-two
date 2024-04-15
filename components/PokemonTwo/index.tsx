@@ -23,6 +23,7 @@ export default function PokemonTwo() {
 
   return (
     <CardPokemon
+      dataTestId="pokemon-two"
       src={pokemon.sprites?.other?.["official-artwork"]?.front_default || ""}
       bgColorCard={pokemonSpecies?.color?.name || "all"}
       pokemon={pokemon}
